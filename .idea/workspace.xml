@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbb57483-5787-4fde-9359-9709c651c778" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands/bot_cmd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/engine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/middleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/orm_query.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filters/chat_types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboards/inline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboards/reply.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fbb57483-5787-4fde-9359-9709c651c778" name="Changes" comment="finish control">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pip_install" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/logger/info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +131,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720813542276</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish control">
+      <option name="closed" value="true" />
+      <created>1722344723605</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722344723605</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finish control">
+      <option name="closed" value="true" />
+      <created>1722344877045</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722344877045</updated>
+    </task>
+    <task id="LOCAL-00005" summary="finish control">
+      <option name="closed" value="true" />
+      <created>1722345103545</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722345103545</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -150,14 +163,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="1&#10;&#10;Signed-off-by: Ruslan &lt;ruslan.salmin@gmail.com&gt;" />
+    <MESSAGE value="finish control" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish control" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/handlers/admin.py</url>
-          <line>248</line>
+          <line>244</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -167,7 +182,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/handlers/admin.py</url>
-          <line>257</line>
+          <line>253</line>
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

@@ -439,7 +439,8 @@ async def successful_payment(message: types.Message, state: FSMContext, session:
     data = await state.get_data()
     calculation_id = data['calculation_id']
 
-    payment = float(AMONT)
+    # сумму платежа преобразовываю, для отображения копеек
+    payment = float(AMONT)/100
     # записываю квитанцию в БД
     await orm_add_payment(session, calculation_id, payment, payment_info)
 

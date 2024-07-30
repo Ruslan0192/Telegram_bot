@@ -23,8 +23,6 @@ dp.include_router(user_router)
 from commands.bot_cmd import private
 
 
-
-
 from loguru import logger
 from notifiers.logging import NotificationHandler
 
@@ -33,10 +31,8 @@ LOG_FILE = 'logger/info.json'
 
 
 
-
-
 async def on_startup():
-    new_start = False
+    new_start = True
     if new_start:
         await drop_db()
         await create_db()

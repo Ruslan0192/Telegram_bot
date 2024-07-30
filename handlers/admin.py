@@ -236,11 +236,7 @@ async def user_load(callback: types.CallbackQuery, state: FSMContext,  session: 
                 result = await orm_get_calculation(session, extra['calc_id'])
                 result = result[0]
 
-                # сумму платежа преобразовываю, для отображения копеек
-                payment_float = result.payments/100
-                # payment_float = float(result.payments[:-2] + '.' + result.payments[-2:])
-
-                list_payment.append(payment_float)
+                list_payment.append(result.payments)
                 list_payment_id.append(result.payment_id)
                 list_payment_date.append(result.updated)
 
@@ -251,7 +247,7 @@ async def user_load(callback: types.CallbackQuery, state: FSMContext,  session: 
             'id расчета': list_id_calc,
             'дата платежа': list_payment_date,
             'номер платежа': list_payment_id,
-            'сумма платежа': list_payment
+            'сумма платежа, руб': list_payment
             }
 
     # запись файла
@@ -288,7 +284,7 @@ async def payment(callback: types.CallbackQuery, state: FSMContext,  session: As
     date_create = date_payment.strftime("%d-%m-%Y_%H-%M")
 
 
-    await callback.message.answer(text=f'Платеж {payment_id} на сумму {payments} принят {date_create}',
+    await callback.message.answer(text=f'Платеж {payment_id} на сумму {payments} рублей принят {date_create}',
                                   reply_markup=ADMIN_KB)
 
 
